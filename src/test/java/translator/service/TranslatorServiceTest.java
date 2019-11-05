@@ -31,9 +31,9 @@ public class TranslatorServiceTest {
   }
 
   @Test
-  public void EStoCS() {
-    TranslatedText translatedText = translatorService.translate("es", "cs", "¿Cómo estás?");
-    assertEquals("Jak se máš?", translatedText.getTranslation());
+  public void ENtoTR() {
+    TranslatedText translatedText = translatorService.translate("en", "tr", "Have a nice day");
+    assertEquals("İyi günler ", translatedText.getTranslation());
   }
 
 }
